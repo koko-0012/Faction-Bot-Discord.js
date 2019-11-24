@@ -40,7 +40,7 @@ connection.query('SELECT * FROM data ORDER BY TotalWorth DESC', function (err, d
         let worth10 = data[9].TotalWorth
 
         let Done = new RichEmbed()
-        .setColor(`${config.Embeds.color}`)
+        .setColor(`#8A2BE2`)
         .setTitle(":newspaper: **Faction TOP**")
         .addField("**Top 1**", "Faction: " + "``" + top1 + "  " + "``" + " Worth: " + "``" + worth1 + "``")
         .addField("**Top 2**", "Faction: " + "``" + top2 + "  " + "``" + " Worth: " + "``" + worth2 + "``")
@@ -52,7 +52,7 @@ connection.query('SELECT * FROM data ORDER BY TotalWorth DESC', function (err, d
         .addField("**Top 8**", "Faction: " + "``" + top8 + "  " + "``" + " Worth: " + "``" + worth8 + "``")
         .addField("**Top 9**", "Faction: " + "``" + top9 + "  " + "``" + " Worth: " + "``" + worth9 + "``")
         .addField("**Top 10**", "Faction: " + "``" + top10 + "  " + "``" + " Worth: " + "``" + worth10 + "``")
-        .setFooter(`${config.Embeds.footer}`, `${config.Embeds.Photo}`);
+        .setFooter(`Created by koko#0012`);
      message.channel.send(Done)
     } 
 })
