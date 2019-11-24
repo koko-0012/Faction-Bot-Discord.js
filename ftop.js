@@ -12,7 +12,7 @@ module.exports = {
       name: "ftop",
       aliases: [],
   },
-run: async (bot, message, args, connection) => {
+run: async (bot, message, args) => {
 connection.query('SELECT * FROM data ORDER BY TotalWorth DESC', function (err, data) {
     if (err) return console.error(err);
     if (data.length > 9) {
