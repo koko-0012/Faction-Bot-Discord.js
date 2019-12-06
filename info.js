@@ -6,7 +6,7 @@ const connection = mysql.createConnection(config)
 
 module.exports = { 
   config: {
-      name: "getleader",
+      name: "factioninfo",
       aliases: [""],
   },
 run: async (bot, message, args) => {
